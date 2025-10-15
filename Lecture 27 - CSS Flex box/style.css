@@ -1,0 +1,81 @@
+:root{
+    --btn-color:blue;
+    --bg-color:Yellow;
+    --default-color:green;
+}
+*{
+    box-sizing: border-box;
+    background-color: var(--bg-color);
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.navbar a {
+    margin: 10px 30px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    
+    justify-content: center;
+
+    color: green;
+   
+}
+.h1{
+    /* text-decoration: underline; */
+     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: px px;
+    
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.53);
+    
+}
+.card{
+    flex: 0,0,250px;
+  
+    padding: 20px;
+
+}
+.card img:hover{
+transform: scale(1.1);
+box-shadow: 10px 2px 20px rgba(0,0,0,0.53);
+}
+
+.card img{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    margin: 10px 30px;
+    box-shadow: 10px 2px 20px rgba(0,0,0,0.30);
+    object-fit: cover;
+    
+   
+}
+
+.card p {
+    
+    text-align: center;
+}
+.card h2{
+    text-align: center;
+    /* justify-content: center; */
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    align-items:center;
+    gap: 15px;
+
+}
+.card{
+    flex: 0 1 250px;
+}

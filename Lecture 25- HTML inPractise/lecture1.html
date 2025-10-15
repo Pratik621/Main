@@ -1,0 +1,135 @@
+<!--Playing with html tags------inline & block elments
+<a href="www.google.com"
+
+Span Tag====> is similar to div ,but is an inline tag,and mostly used when we need to apply some specific 
+
+
+Semantic TAG===> Header,Footer ,Nav,Section, Main>
+--->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .nav{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        background-color: bisque;
+    }
+   .heading{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(235, 74, 74);
+   }
+   .travel{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(161, 255, 37);
+   }
+   .href{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(252, 248, 40);
+
+
+   }
+   .college{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+    justify-content: center;
+    background-color: gold;
+   }
+   .rajastan{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: rgb(55, 225, 255);
+    
+   }
+   
+</style>
+
+<body>
+    <div class="nav">
+    <nav >
+       
+
+       <h3> <center>Click here to visit the section!! </center></h3>  <center><button onclick="location.href='#Rajastan'">Rajastan🌄</button> | <button onclick="location.href='#college'"> College🏢</button> </center>
+    
+    </nav>
+    </div>
+    <main>
+        <div class="href" >
+        <div >
+    <center><h1 id="heading" class="heading"> My Blogs 🚀 </h1></center>
+    </div>
+      
+     <section id="Rajastan" class="Rajasthan">
+        <nav>
+           <center><button onclick="location.href='#Jaipur'" >Jaipur</button>
+            | <button onclick="location.href='#Jaisalmer'">  Jaisalmer</button> 
+            | <button onclick="location.href='#Jodhpur'"> Jodhpur</button> </center>
+        </nav>
+        </div>
+       
+    <div id="travel" class="travel">
+        <h2 class="rajastan"><center>Travelling to Rajastan 🚆 </center></h2>
+        <h3> <strong> <center>Places that I've Visited And there Information</strong> </center></h3>
+        <center>
+        <div id="Jaipur" class="Jaipur">
+        <h3> <strong> <cite>Jaipur: </cite> </strong> Jaipur, known as the Pink City, is a vibrant blend of royal heritage, colorful culture, and majestic architecture in Rajasthan, India. </h3>
+        <img src="https://www.andbeyond.com/wp-content/uploads/sites/5/Jaipur-2.jpg" alt="Jaipur" width="300" height="=300">
+        <hr> 
+        </div>
+        
+        <div id="Jaisalmer" class="Jaisalmer">
+        <h3><strong><cite>Jaisalmer: </cite></strong> Jaisalmer, often called the Golden City, is famed for its stunning yellow sandstone architecture, the majestic Jaisalmer Fort, and its enchanting Thar Desert landscapes.</h3>
+        <img src="https://s7ap1.scene7.com/is/image/incredibleindia/1-sam-sand-dunes-jaisalmer-city-hero?qlt=82&ts=1726660014904" alt="Jaisalmer" width="300" height="=300">
+        <hr>
+        </div>
+        <div id="Jodhpur" class="Jodhpur">
+        <h3><strong> <cite>Jodhpur: </cite></strong> Jodhpur, known as the Blue City, is famous for its vibrant blue houses, the towering Mehrangarh Fort, and its rich history and royal heritage in the heart of Rajasthan.</h3>
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/c8/6d/b9/exterior.jpg?w=900&h=500&s=1" alt="Jodhpur" width="300" height="=300">
+        <hr>
+        </div>
+        </center>
+    </div>
+     </section>
+     <center>
+     <section id="college" class="college">
+        <div>
+            <h2>About My College Life</h2>
+            <img src="https://www.dypcoei.edu.in/wp-content/uploads/2024/08/DYPCOEI-About-Us.jpg" alt="College" width="500" height="=500">
+            <h3><strong>College Name:</strong> Dr D Y Patil College,Pune</h3>
+            <h3><strong>Location:</strong> Pune, Maharashtra</h3>
+            <h3><strong>Courses:</strong> B.Tech in Computer Science</h3>
+            <h3><strong>Extracurricular Activities:</strong> Coding Club, Sports, Cultural Events</h3>
+            <h3><strong>Memorable Experiences:</strong> Participating in hackathons, college festivals, making lifelong friends</h3>
+        </div>
+        </center>
+     </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+    </main>
+</body>
+</html>

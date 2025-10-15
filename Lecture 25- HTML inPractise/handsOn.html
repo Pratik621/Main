@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <style>
+      main {
+                background-color: rgb(160, 158, 158);
+            }
+                li {
+                    cursor: pointer;
+                }
+                li:hover {
+                    color: blue;
+                }
+                
+                score:button {
+                    color: yellow;
+                }
+                
+                checkAnswer {
+                    background-color: green;
+                }
+             </style>
+<body>
+    <main id="main" class="main">
+        <h1><center> <cite> <strong>Aptitude Questions</strong></cite></center>  </h1> <hr> 
+        <p id="correct"></p>
+        <p id="count"> </p>
+        <button id="correct">Correct</button>
+        <button id="count">Count</button>
+       <center> <cite> <button id="score"> Score</button> </cite></center>
+    
+     <section>
+        <h2>Question's</h2>
+        <ol>
+            <div><li>Question in words 1</li> 
+             <h4>Options:</h4>
+             <ol type="A">
+                <li onclick="checkAnswer(this,1,4)"> 1</li>
+                <li onclick="checkAnswer(this,2,4)">2</li>
+                <li onclick="checkAnswer(this,3,4)">3</li>
+                <li onclick="checkAnswer(this,4,4)">4</li>
+             </ol>
+            
+
+            </div>
+            <hr>
+            <div>
+                <li>Question in words 2</li>
+                <h4>Options:</h4>
+                <ol type="A">
+                <li onclick="checkAnswer(this,1,2)"> 1</li>
+                <li onclick="checkAnswer(this,2,2)">2</li>
+                <li onclick="checkAnswer(this,3,2)">3</li>
+                <li onclick="checkAnswer(this,4,2)">4</li>
+                </ol>
+
+            </div>
+            <hr>
+            <div>
+                <li>Question in words 3</li>
+                <h4>Options</h2>
+                    <ol type="A">
+                <li onclick="checkAnswer(this,1,1)"> 1</li>
+                <li onclick="checkAnswer(this,2,1)">2</li>
+                <li onclick="checkAnswer(this,3,1)">3</li>
+                <li onclick="checkAnswer(this,4,1)">4</li>
+                </ol>
+            </div>
+            <hr>
+            <div>
+                <li>Question in words 4</li>
+                <h4> Options</h4>
+                <ol type="A">
+                    <li onclick="checkAnswer(this,1,3)">1</li>  
+                    <li onclick="checkAnswer(this,2,3)">2</li>  
+                    <li onclick="checkAnswer(this,3,3)">3</li>
+                    <li onclick="checkAnswer(this,4,3)">4</li>
+                </ol>
+            </div>
+            <hr>
+        
+         <div>
+                <li>Question in words 5</li>
+                <h4> Options</h4>
+                <ol type="A">
+                    <li onclick="checkAnswer(this,1,3)">1</li>  
+                    <li onclick="checkAnswer(this,2,3)">2</li>  
+                    <li onclick="checkAnswer(this,3,3)">3</li>
+                    <li onclick="checkAnswer(this,4,3)">4</li>
+                </ol>
+            </div>
+            <hr>
+        </ol>
+     </section>
+       
+
+            <h2> <cite> <center>Check Score?</center> </cite></h2>
+           <nav> <center> <a href="#main"> Click Me!!</a> </center> </nav>
+           <br><br><br><br><br>
+
+    </main>
+    <script> 
+      let count=0;
+           function checkAnswer(element,answer,correct){
+        if( answer==correct && element){
+           
+            count++;
+            element.style.background="green";
+            document.getElementById("correct").innerHTML="Correct Answer";
+             celebrate();
+           
+        }
+        else {
+            element.style.background="red";
+            document.getElementById("correct").innerHTML="Wrong Answer";
+        }
+         document.getElementById("count").innerHTML="Total Correct Answers: "+count; 
+         document.getElementById("score").innerHTML="Your Score is: "+(count*10);
+         
+       }
+       function celebrate(){
+        confetti({
+            particleCount: 600,
+            spread: 700,
+            
+
+        });
+       }
+
+      
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</body>
+</html>

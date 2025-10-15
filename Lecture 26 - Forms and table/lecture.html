@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div>
+        <label for="name"><strong><cite>Name</cite></strong></label>
+        <input type="text" id="name" name="name" placeholder="eg Pratik Mane" required autocomplete="name"/>
+        <br> <br>
+    </div>
+    <div>
+        <label for="email"><strong><cite>Email</cite></strong></label>
+        <input type="email" id="email" placeholder="eg pm@gmail.com" required autocomplete="email"/>
+        <br> <br>
+    </div>
+    <div>
+        <label for="phone"><strong><CITE>Phone Number</CITE></strong></label>
+        <input type="number" name="phone" id="phone" placeholder="enter without country code" required autocomplete=""/>
+        <br> <br>
+    </div>
+    <div>
+        <label for="country"><strong><cite>Country</cite></strong></label>
+        <select name="country" id="country" >
+            <option value="Select a Country"></option>
+            <option >Inida</option>
+            <option >US</option>
+            <option >UK</option>
+            <option >Germany</option>
+            <option >Dubai</option>
+        </select>
+    </div>
+    <br><br>
+    <div>
+        <label for="Cities"><strong><cite>City</cite></strong></label>
+        <select name="Cities" id="Cities">
+            <option value="">Section City</option>
+            <option>Mumbai</option>
+            <option>Pune</option>
+            <option>Nagpur</option>
+            <option>Banglore</option>
+            <option>Lucknow</option>
+        </select>
+    </div>
+    <br><br>
+    <div>
+        <label for="date"><strong><cite>Date</cite></strong></label>
+        <input type="date" id="date" name="date">
+        <br><br>
+    </div>
+    <div>
+        <label for="loginID"><strong><cite>Enter you unique ID</cite></strong></label>
+        <input type="text" id="loginID" placeholder="eg Pratikxx">
+        <button type="verify" ><strong><cite>verify!</cite></strong></button>
+        <br><br>
+    </div>
+    <div>
+        <label for="passowrd"> <strong> <cite> Password</cite></strong></label>
+        <input type="password" id="passowrd" type="password" placeholder="atleast 6 digit">
+        <br><br>
+    </div>
+    
+        <button type="submit"><strong><cite>Sign in</cite></strong></button>
+    </form>
+    <div>
+        <h3>List Of Fruits</h3>
+        <p id="mango" data-product-id="abc1" data-price="10">
+            Mango - <span>10</span>
+        </p>
+        <p id="apple" data-product-id="abc2" data-price="20">Apple - <span>40</span></p>
+        <p id="baanana"> Banana- <span>30</span></p>
+    </div>
+    <script>
+        let mango=document.getElementById("mango");
+        console.log(mango.dataset.productId);
+        mango.dataset.color="pink";
+        console.log(mango.dataset.color)
+    </script>
+</body>
+</html>
